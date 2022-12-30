@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<script src='idb.js'></script>
+<textarea rows='1' cols = '80' id='in'></textarea>
+<span style= 'border: solid' onclick = 'addToSog()'>add</span>
+<div  class='x' style='direction: rtl;'>
+	<span>حرف البداية:</span>
+	<span>أ<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ب<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ت<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ث<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ج<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ح<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>خ<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>د<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ذ<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ر<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ز<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>س<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ش<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ص<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ض<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ط<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ظ<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ع<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>غ<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ف<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ق<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ك<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ل<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>م<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ن<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ه<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>و<input name = 'first' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ي<input name = 'first' type='radio' onclick = 'setVal(this)'></span>
+</div>
+<div class='x' style='direction: rtl;'>
+	<span>حرف النهاية:</span>
+	<span>أ<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ب<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ت<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ث<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ج<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ح<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>خ<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>د<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ذ<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ر<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ز<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>س<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ش<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ص<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ض<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ط<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ظ<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ع<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>غ<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ف<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ق<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ك<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ل<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>م<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ن<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ه<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>و<input name = 'last' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ي<input name = 'last' type='radio' onclick = 'setVal(this)'></span>
+</div>
+<div class='x' style='direction: rtl;'>
+	<span>حرف:</span>
+	<span>أ<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ب<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ت<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ث<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ج<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ح<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>خ<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>د<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ذ<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ر<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ز<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>س<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ش<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ص<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ض<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ط<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ظ<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ع<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>غ<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ف<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ق<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ك<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ل<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>م<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ن<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ه<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>و<input name = 'out' type='radio' onclick = 'setVal(this)'>||</span>
+	<span>ي<input name = 'out' type='radio' onclick = 'setVal(this)'></span>
+</div>
+<span style= 'border: solid' onclick = 'outnb()'>out nb</span>
+<span style= 'border: solid' onclick = 'outalpha()'>out haref</span>
+<div id='out' style='direction: rtl;'>
+</div>
+<script src='main.js'></script>
