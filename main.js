@@ -18,13 +18,20 @@ document.querySelectorAll('.x').forEach(el => {
 });
 function addToSog() {
 	var elin = document.getElementById('in');
+	if (!elin.value) return;
 	if (!(valfirst in sogobj)) sogobj[valfirst] = [];
 	sogobj[valfirst].push({value: elin.value, last: vallast})
 	sogobjS.put('obj', sogobj)
+	outalpha()
 }
 function sogref() {
 	sogobj = {};
 	sogobjS.put('obj', sogobj)
+}
+function remsog(nb, alpha) {
+	sogobj[alpha] = sogobj[alpha].filter((ii,i) => i !== nb);
+	sogobjS.put('obj', sogobj);
+	outalpha()
 }
 function outnb() {
 	var outel = document.getElementById('out');
@@ -48,7 +55,7 @@ function outalpha() {
 	var arr = sogobj[valout];
 	var str = '';
 	arr.forEach((item, i) => {
-		str += (i+1) + ': ' + item.value + '                   (' + item.last + ')\n'
+		str += '<div>' + (i+1) + ': ' + item.value.replaceAll('***', '&emsp;') + '(' + item.last + ')<span onclick="remsog(' + i + ',\'' + valout + '\')"></span></div>' 
 	});
-	outel.innerText = str
+	outel.innerHTML = str;
 }
